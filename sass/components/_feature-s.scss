@@ -1,0 +1,62 @@
+.feature-s {
+    background-color: $color;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.is-hidden {
+   display: none;
+   margin: 0;
+}
+
+.feature-div {
+    display: flex;
+}
+
+.feature-ul {
+    display: flex;
+}
+
+.feature-li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.feature-li {
+    display: block;
+}
+
+.antenna {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: $colorturbid;
+    border-radius: 4px;
+}
+
+.icon-antenna {
+    width: 70px;
+    height: 70px;
+}
+
+.feature-title {
+    color: $colorsemyblack;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.feature-text {
+    color: $colorgray;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin: 0;
+}
