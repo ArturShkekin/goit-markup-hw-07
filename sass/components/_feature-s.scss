@@ -40,14 +40,10 @@
 }
 
 .feature-title {
-    color: $colorsemyblack;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    @extend %font14;
     padding-top: 30px;
     margin: 0;
+    color: $colorsemyblack;
 }
 
 .feature-text {

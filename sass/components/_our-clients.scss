@@ -3,12 +3,7 @@
 }
 
 .our-title {
-    color: $colorsemyblack;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.03em;
-    text-align: center;
+    @extend %font36;
     margin: 0;
     margin-bottom: 50px;
 }

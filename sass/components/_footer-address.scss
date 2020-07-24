@@ -7,37 +7,26 @@
 }
 
 .logo-footer {
-    display: inline-block;
-    font-family: 'Raleway', sans-serif;
-    color: $color;
-    font-weight: bold;
+    @extend %logo;
     font-size: 22px;
     line-height: 26px;
-    letter-spacing: 0.03em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo-footer-part,
-.logo-footer:hover,
-.logo-footer:focus,
-.footer-address-contacts:hover,
-.footer-address-contacts:focus {
-    color: $colorhover;
+    color: $color;
+    &:hover,
+    &:focus {
+        color: $colorhover; 
+    }
 }
 
 .logo-footer-part {
-   margin: 0;
+    color: $colorhover;
+    margin: 0;
 }
 
 .footer-address {
     display: flex;
     flex-direction: column;
     color: $color;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.03em;
+    @extend %footer-address;
     padding-top: 10px;
     margin: 0;
 }
@@ -45,11 +34,11 @@
 .footer-address-contacts {
     display: inline-block;
     color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.03em;
+    @extend %footer-address;
     padding-top: 9px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $colorhover; 
+    }
 }

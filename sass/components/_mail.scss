@@ -22,6 +22,10 @@
     padding-top: 32px;
     padding-bottom: 32px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $colorhover; 
+    }
 }
 
 .mail-link:hover .icon-link,
@@ -29,14 +33,6 @@
 .mail-link-tel:hover .icon-link-tel,
 .mail-link-tel:focus .icon-link-tel {
     fill: $colorhover;
-}
-
-.mail-link:hover,
-.mail-link-tel:hover,
-.nav-link:focus,
-.mail-link:focus,
-.mail-link-tel:focus {
-    color: $colorhover;
 }
 
 .icon-link,

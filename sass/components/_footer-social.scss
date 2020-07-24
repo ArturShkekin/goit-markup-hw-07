@@ -5,12 +5,8 @@
 }
 
 .footer-social-title {
+    @extend %font14;
     color: $color;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     margin: 0;
 }
 
@@ -43,9 +39,9 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $colorhover; 
+    }
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-     background-color: $colorhover;
-}

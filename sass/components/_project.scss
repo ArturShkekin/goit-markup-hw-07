@@ -10,6 +10,10 @@
     border: 1px solid #EEEEEE;
     box-shadow: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+    }
 }
 
 .project-item:nth-child(3n) {
@@ -54,9 +58,9 @@
 }
 
 .project-span {
+    position: absolute;
     display: flex;
     align-items: center;
-    position: absolute;
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
     bottom: 0;
@@ -80,7 +84,3 @@
     transform: translateY(0);
 }
 
-.project-item:hover,
-.project-item:focus {
-    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-}

@@ -10,12 +10,7 @@
 }
 
 .team-title {
-    color: $colorsemyblack;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.03em;
-    text-align: center;
+    @extend %font36;
     margin: 0;
     margin-bottom: 50px;
 }
@@ -34,23 +29,17 @@
 }
 
 .team-name {
-    color: $colorsemyblack;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    text-align: center;
+    @extend %font16;
+    color: $colorsemyblack;
     margin: 0;
     padding-top: 30px;
 }
 
 .team-position {
-    color: $colorgray;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    text-align: center;
+    @extend %font16;
+    color: $colorgray;
     margin: 0;
     padding-top: 10px;
 }

@@ -9,12 +9,7 @@
 }
 
 .doing-title {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $colorsemyblack;
+    @extend %font36;
     margin: 0;
     margin-bottom: 50px;
 }
@@ -45,12 +40,8 @@
 }
 
 .doing-text {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    @extend %font14;
     text-align: center;
-    text-transform: uppercase;
     color: $color;
     padding-top: 27px;
     padding-bottom: 27px;
